@@ -19,6 +19,8 @@ Install dependencies:
 ```bash
 composer install
 ```
+Create the .env file with connection to database and other variables (see .env.example)
+
 Migrate database:
 ```bash
 php artisan migrate
