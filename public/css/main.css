@@ -1,0 +1,167 @@
+@import "./menu.css";
+@import "./footer.css";
+@import "./cart.css";
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+.product {
+    position: relative;
+    min-height: 290px;
+}
+
+.product-name {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* color: #6c757d; */
+}
+
+.product-link,
+.product-link:hover {
+    color: #6c757d;
+}
+
+.price {
+    position: absolute;
+    bottom: 0;
+    font-weight: 700;
+}
+
+.product img,
+.product-name {
+    width: 200px;
+}
+
+.btn-right {
+    text-align: right;
+}
+
+input.radio {
+    margin-right: 5px
+}
+
+input.radio-2 {
+    margin-right: 5px;
+    margin-left: 50px;
+}
+
+form.form1 {
+    max-width: 480px;
+    margin: auto;
+}
+
+.btn-right {
+    float: right;
+}
+
+.btn-next {
+    background-color: #be3144;
+    border: 2px solid transparent;
+}
+
+.btn-next:hover {
+    border: 2px solid #be3144;
+    color: #be3144;
+    background-color: white;
+}
+
+.btn-back {
+    color: #be3144;
+    border: 2px solid transparent;
+    border: 2px solid #be3144;
+}
+
+.btn-back:hover {
+    border: 2px solid #be3144;
+    color: #be3144;
+    background-color: white;
+}
+
+.single .single-price {
+    font-size: 30px;
+}
+
+.product-gallery div:first-of-type {
+    margin-left: 0 !important;
+}
+
+.product-gallery img:hover {
+    cursor: pointer;
+}
+
+.amount input {
+    width: 45px;
+}
+
+.amount svg:hover {
+    cursor: pointer;
+}
+
+.page-link.active {
+    background-color: #e9ecef;
+    border-color: #dee2e6;
+}
+
+#filter legend {
+    font-size: 1.3rem;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.pag-wrapper{
+    bottom: -50px;
+}
+
+@media screen and (max-width: 1050px) {
+    .main-product-photo img {
+        width: 400px;
+    }
+    .product-gallery img {
+        width: 80px;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .main-product-photo img {
+        width: 350px;
+    }
+    .product-gallery img {
+        width: 60px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .product img,
+    .product-name {
+        width: 160px;
+    }
+    .product {
+        min-height: 250px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .product img,
+    .product-name {
+        width: 130px;
+    }
+    .product {
+        min-height: 220px;
+    }
+}
